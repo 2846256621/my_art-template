@@ -1,0 +1,16 @@
+[
+  {"name":"Jack",
+  "age":20,
+  "province":"河南省'",
+  "hobbies":["eat","music","play"]
+  },
+  {"name":"Rose",
+    "age":18,
+    "province":"北京市'",
+    "hobbies":["eat","sleep","watch TV"]
+  },
+  {"name":"Little fairy",
+    "age":16,
+    "province":"陕西省'",
+    "hobbies":["eat","sleep","read book"]
+  }]

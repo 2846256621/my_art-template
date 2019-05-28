@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+   {{each data as value index}}
+    <p>hello , i am {{value.name}}</p>
+    <p>i am {{value.age}} years old</p>
+    <p>i come from {{value.province}}</p>
+    <!--遍历二维数组-->
+    <p>i like
+        {{each value.hobbies as i }} {{i}} ,{{/each}}
+    </p>
+    <br>
+   {{/each}}
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "node_template",
+  "version": "1.0.0",
+  "dependencies": {
+    "art-template": "^4.13.2",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  }
+}

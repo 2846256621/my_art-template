@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script src="./node_modules/art-template/lib/template-web.js"></script>
+<script type="text/x-handlebars-template" id="tp1">
+    hello {{name}}
+    i am {{age}} years old
+    i come from {{province}}
+    i like {{each hobbies}} {{$value}} {{/each}}
+</script>
+<script>
+    let res = template('tp1',{
+        name:'Jack',
+        age:20,
+        province:'陕西省',
+        hobbies:["eat","sleep","play"]
+    });
+    console.log(res);
+</script>
+</body>
+</html>
+
+
+
+
+
+<!--浏览器中  模板引擎使用方法
+    不关心字符串内容及格式
+    不关心字符串内容及格式
+    只认识 {{}}
+
+    使用方法：
+    1.安装： npm install art_template
+    2.<script>引入安装的js包  node_modules/art-template/lib/template-web.js
+    3.<script> 标签里写自己的模板 type ='text/x-handlebars-template' 而不是 text/javascript 不同的解析方式
+    4.给模板里写值  template(' script模板名(id)'，{对象})
+
+-->
